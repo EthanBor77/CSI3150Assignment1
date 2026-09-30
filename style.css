@@ -268,7 +268,7 @@ html {
 
 .pricing-card.featured {
   border: 2px solid var(--primary);
-  background-color: rgba(99, 102, 241, 0.04);
+  background-color: #3e3e3a;
   transform: scale(1.03);
 }
 
@@ -326,7 +326,7 @@ html {
 .tier-features {
   list-style-type: none;
   margin-bottom: 2rem;
-  flex-grow: 1; /**pushes the button the bottom evenly*/
+  flex-grow: 1;
 }
 
 .tier-features li {
@@ -334,4 +334,88 @@ html {
   border-bottom: 1px solid var(--accent);
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+.pricing-card.featured {
+  position: relative;
+}
+
+.calculator-box {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.calculator-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.calculator-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.estimation-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.lead-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.estimation-form .form-group {
+  width: auto;
+  min-width: 200px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: #121212;
+  color: var(--text-main);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
