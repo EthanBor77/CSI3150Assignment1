@@ -69,19 +69,19 @@
             <h3 class="feature-title">Auto-Remediation</h3>
             <p class="feature-desc">
               Intelligent systems that automatically detect and resolve issues
-              before they impact users. your servers.
+              before they impact your servers.
             </p>
           </article>
         </div>
       </section>
+
       <section id="pricing" class="section-container">
         <!-- Pricing section -->
         <!-- "Developer", "Pro Cluster", "Enterprise Dedicated" (Story 3) -->
-        <!-- Which plan is right for you? (Story 4) -->
         <header class="section-header">
-          <h3 class="section-title">Predictable, Transparent Pricing</h3>
+          <h2 class="section-title">Predictable, Transparent Pricing</h2>
           <p class="section-subtitle">
-            Scale seamlessly from first transaction to enterprise volumes.
+            Scale seamlessly from first deployment to enterprise volume.
           </p>
         </header>
         <div class="pricing-grid">
@@ -91,60 +91,153 @@
               Perfect for individual developers and small teams
             </p>
             <div class="tier-price">
-              <span class="price-val">2.9%</span>
-              <span class="price-unit">+ 30 cents</span>
+              <span class="price-val">$0</span>
+              <span class="price-unit">/ month</span>
             </div>
             <ul class="tier-features">
-              <li>Standard Payouts (T+2)</li>
-              <li>Basic Fraud Screening</li>
-              <li>Email Support</li>
+              <li>Up to 5 Nodes</li>
+              <li>1 GB Daily Log Throughput</li>
+              <li>Community Support</li>
             </ul>
             <a href="#register" class="btn btn-outline btn-block"
               >Deploy Developer</a
             >
           </article>
+
           <article class="pricing-card featured">
             <div class="popular-tag">Most Popular</div>
             <h3 class="tier-name">Pro Cluster</h3>
             <p class="tier-desc">Ideal for growing businesses and teams</p>
             <div class="tier-price">
-              <span class="price-val">2.9%</span>
-              <span class="price-unit">+ 30 cents</span>
+              <span class="price-val">$49</span>
+              <span class="price-unit">/ month</span>
             </div>
             <ul class="tier-features">
-              <li>Standard Payouts (T+2)</li>
-              <li>Basic Fraud Screening</li>
-              <li>Email Support</li>
+              <li>Up to 50 Nodes</li>
+              <li>50 GB Daily Log Throughput</li>
+              <li>24/7 Email & Chat Support</li>
             </ul>
             <a href="#register" class="btn btn-primary btn-block"
               >Deploy Pro Cluster</a
             >
           </article>
+
           <article class="pricing-card">
             <h3 class="tier-name">Enterprise Dedicated</h3>
             <p class="tier-desc">For large enterprises with complex needs</p>
             <div class="tier-price">
-              <span class="price-val">2.9%</span>
-              <span class="price-unit">+ 30 cents</span>
+              <span class="price-val">Custom</span>
             </div>
             <ul class="tier-features">
-              <li>Standard Payouts (T+2)</li>
-              <li>Basic Fraud Screening</li>
-              <li>Email Support</li>
+              <li>Unlimited Nodes</li>
+              <li>Unlimited Log Throughput</li>
+              <li>Dedicated Account Manager</li>
             </ul>
             <a href="#register" class="btn btn-outline btn-block"
               >Contact Sales</a
             >
           </article>
         </div>
+
+        <!-- Workload Estimation Form (Story 4) -->
+        <div class="calculator-box">
+          <h3 class="calculator-title">Workload Estimation Calculator</h3>
+          <p class="calculator-desc">
+            Enter your requirements to verify tier compatibility:
+          </p>
+          <form class="estimation-form">
+            <div class="form-group">
+              <label for="node-count">Node Count (1 - 500 nodes):</label>
+              <input
+                type="number"
+                id="node-count"
+                name="nodeCount"
+                class="form-input"
+                min="1"
+                max="500"
+                value="10"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="log-throughput"
+                >Log Throughput (1 - 1000 GB/day):</label
+              >
+              <input
+                type="number"
+                id="log-throughput"
+                name="logThroughput"
+                class="form-input"
+                min="1"
+                max="1000"
+                value="25"
+                required
+              />
+            </div>
+            <button type="button" class="btn btn-secondary">Verify Tier</button>
+          </form>
+        </div>
       </section>
+
       <section id="register" class="section-container">
-        <!-- Registration section -->
         <!-- API Provisioning Lead Capture (Story 5) -->
+        <header class="section-header">
+          <h2 class="section-title">Get Started with DevPulse</h2>
+          <p class="section-subtitle">
+            Request early access to receive your API sandbox provisioning
+            details.
+          </p>
+        </header>
+
+        <form class="lead-form">
+          <div class="form-group">
+            <label for="full-name">Full Name *</label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              class="form-input"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="work-email">Work Email *</label>
+            <input
+              type="email"
+              id="work-email"
+              name="workEmail"
+              class="form-input"
+              placeholder="jane@company.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="preferred-tier">Preferred Cluster Tier *</label>
+            <select
+              id="preferred-tier"
+              name="preferredTier"
+              class="form-input"
+              required
+            >
+              <option value="">-- Select a Tier --</option>
+              <option value="developer">Developer</option>
+              <option value="pro">Pro Cluster</option>
+              <option value="enterprise">Enterprise Dedicated</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Get API Sandbox Details
+          </button>
+        </form>
       </section>
     </main>
+
     <footer class="site-footer">
-      <p>&copy; 2024 DevPulse. All rights reserved.</p>
+      <p>&copy; 2026 DevPulse. All rights reserved.</p>
     </footer>
   </body>
 </html>
